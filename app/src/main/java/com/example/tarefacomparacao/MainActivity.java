@@ -24,6 +24,12 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void calcularMet(View view) {
+        String picanhaboa,picanharuim;
+        picanhaboa = editPreco1.getText().toString();
+        picanharuim = editPreco2.getText().toString();
+
+        Boolean camposvalidados = validarcampos(picanhaboa,picanharuim);
+
     }
     public Boolean validarcampos(String P1, String P2){
         Boolean camposvalidados = true;
