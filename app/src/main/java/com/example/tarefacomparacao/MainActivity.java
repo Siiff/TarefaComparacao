@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
         editPreco1 = findViewById(R.id.Preco1);
         editPreco2 = findViewById(R.id.Preco2);
 
+        textResultado = findViewById(R.id.Resultado);
+
     }
 
 
@@ -29,7 +31,21 @@ public class MainActivity extends AppCompatActivity {
         picanharuim = editPreco2.getText().toString();
 
         Boolean camposvalidados = validarcampos(picanhaboa,picanharuim);
+        if(camposvalidados){
+            Double valorPicanhaboa = Double.parseDouble(picanhaboa);
+            Double valorPicanharuim = Double.parseDouble(picanharuim);
 
+            Double resultado = valorPicanhaboa / valorPicanharuim;
+            if (resultado >= 0.7){
+                textResultado.setText("Melhor a Picanha Ruim");
+            }
+            else {
+                textResultado.setText("Melhor a Picanha Boa");
+            }
+        }
+        else{
+            textResultado.setText("Preencha os campos primeiro!");
+        }
     }
     public Boolean validarcampos(String P1, String P2){
         Boolean camposvalidados = true;

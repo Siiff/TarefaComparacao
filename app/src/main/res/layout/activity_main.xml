@@ -28,12 +28,12 @@
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="342dp"
-            android:layout_height="123dp"
+            android:layout_width="349dp"
+            android:layout_height="137dp"
             android:layout_marginStart="139dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="142dp"
-            android:text="Daniel vai fazer um churras, ele quer ajuda para saber qual carne esta mais em conta, ajude-o a decidir"
+            android:text="Daniel vai fazer um churras pra classe, ele quer ajuda para saber qual carne esta mais em conta, ajude-o a decidir"
             android:textAlignment="center"
             android:textSize="24sp"
             android:textStyle="bold"
@@ -59,16 +59,17 @@
 
         <TextView
             android:id="@+id/Resultado"
-            android:layout_width="207dp"
-            android:layout_height="27dp"
+            android:layout_width="310dp"
+            android:layout_height="40dp"
             android:textAlignment="center"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.944" />
+            app:layout_constraintVertical_bias="0.963" />
 
         <TextView
             android:id="@+id/textView4"
@@ -105,8 +106,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="number"
-            android:text="Insira o preço"
+            android:inputType="numberDecimal"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -120,8 +120,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="number"
-            android:text="Insira o preço"
+            android:inputType="numberDecimal"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
